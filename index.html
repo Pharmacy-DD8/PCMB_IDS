@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCSF IDS QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container" id="labels-container">
+        <img src="UCSF_Health_Logo_21_no_tag_Color_300dpi_RGB.png" alt="Logo" id="logo">
+        <h1 id="title">UCSF IDS QR Code Generator</h1>
+
+        <form>
+            <label for="numbers"></label><br>
+            <input type="text" id="numbers" name="numbers" placeholder="Enter numbers separated by commas"><br>
+        </form>
+
+        <button id="generate-btn">Generate QR Codes</button>
+    </div>
+</body>
+</html>
